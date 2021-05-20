@@ -23,10 +23,8 @@ function setup(){
      cat= createSprite(600,400,100,30);
      mouse = createSprite(400,200,120,40);
 }
-
-    
-
-    function draw() {
+  
+function draw() {
 background(garden.png);
     
      if(cat.x-mouse.x<(cat.width-mouse.width)/2){
@@ -43,15 +41,20 @@ background(garden.png);
     mouse.frameDelay = 25;  
 
     }   
- if (keyCode===RIGHT_ARROW) {
-     
- }
+ if(keyCode === LEFT_ARROW){ 
+tom.velocityX = -5; 
+tom.addAnimation("tomRunning", tomImg2); 
+tom.changeAnimation("tomRunning"); 
+jerry.addAnimation("jerryTeasing", jerryImg2);
+ jerry.frameDelay = 25; 
+jerry.changeAnimation("jerryTeasing"); } 
   
-
-
-
-
-
-
-
+drawSprites();
 }
+
+
+
+
+
+
+
