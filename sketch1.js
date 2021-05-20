@@ -36,7 +36,7 @@ background(garden.png);
   //For moving and changing animation write code here
 
     if(keyCode===LEFT_ARROW){
-    mouse.addAnimation("mouseTeasing",mouseImg3);
+    mouse.addAnimation("mouseTeasing",mouseImg2);
     mouse.changeAnimation("mouseTeasing");
     mouse.frameDelay = 25;  
 
