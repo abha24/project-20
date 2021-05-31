@@ -35,7 +35,7 @@ background(garden.png);
     
   //For moving and changing animation write code here
 
-
+ drawSprites();
     }   
  if(keyCode === LEFT_ARROW){ 
 tom.velocityX = -5; 
@@ -46,7 +46,7 @@ jerry.addAnimation("jerryTeasing", jerryImg2);
 jerry.changeAnimation("jerryTeasing"); } 
   
 
- drawSprites();
+
     
   
 }
