@@ -1,6 +1,6 @@
 var bgImg;
-var cat,catImg1,catImg2,catImg3,catImg4;
-var mouse,mouseImg1,mouseImg2,mouseImg3,mouseImg4,;
+var tom,catImg1,catImg2,catImg3,catImg4;
+var jerry,mouseImg1,mouseImg2,mouseImg3,mouseImg4,;
 
 
 function preload() {
@@ -20,16 +20,16 @@ function preload() {
 function setup(){
     createCanvas(1000,800);
     //create tom and jerry sprites here
-     cat= createSprite(600,400,100,30);
-     mouse = createSprite(400,200,120,40);
+     tom= createSprite(600,400,100,30);
+     jerry = createSprite(400,200,120,40);
 }
   
 function draw() {
 background(garden.png);
     
-     if(cat.x-mouse.x<(cat.width-mouse.width)/2){
-      cat.changeAnimation("catHappy",catImg1);
-      mouse.changeAnimation("mouseHappy",mouseImg2);
+     if(tom.x-jerry.x<(tom.width-jerry.width)/2){
+      tom.changeAnimation("catHappy",catImg1);
+      jerry.changeAnimation("mouseHappy",mouseImg2);
      }
           
     
