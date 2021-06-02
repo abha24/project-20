@@ -1,19 +1,19 @@
 var bgImg;
-var tom,catImg1,catImg2,catImg3,catImg4;
-var jerry,mouseImg1,mouseImg2,mouseImg3,mouseImg4,;
+var tom,tomImg1,tomImg2,tomImg3,tomImg4;
+var jerry,jerryImg1,jerryImg2,jerryImg3,jerryImg4,;
 
 
 function preload() {
     //load the images here
     bgImg = loadImage("images/garden.png");
-    catImg1 = loadAnimation("images/cat1.png");
-    catImg2 = loadAnimation("images/cat2.png");
-    catImg3 = loadAnimation("images/cat3.png");
-    catImg4 = loadAnimation("images/cat4.png");
-    mouseImg1 = loadAnimation("images/mouseImg1");
-    mouseImg2 = loadAnimation("images/mouseImg2");
-    mouseImg3= loadAnimation("images/mouseImg3");
-    mouseImg4 = loadAnimation("images/mouseImg4");
+    tomImg1 = loadAnimation("images/cat1.png");
+    tomImg2 = loadAnimation("images/cat2.png");
+    tomImg3 = loadAnimation("images/cat3.png");
+    tomImg4 = loadAnimation("images/cat4.png");
+    jerryImg1 = loadAnimation("images/mouseImg1");
+    jerryImg2 = loadAnimation("images/mouseImg2");
+    jerryImg3= loadAnimation("images/mouseImg3");
+    jerryImg4 = loadAnimation("images/mouseImg4");
 }
 
 
@@ -28,8 +28,8 @@ function draw() {
 background(garden.png);
     
      if(tom.x-jerry.x<(tom.width-jerry.width)/2){
-      tom.changeAnimation("catHappy",catImg1);
-      jerry.changeAnimation("mouseHappy",mouseImg2);
+      tom.changeAnimation("tomHappy",tomImg1);
+      jerry.changeAnimation("jerryHappy",jerryImg2);
      }
           
     
